@@ -16,28 +16,58 @@
     <link rel="stylesheet" href="./output.css" />
   </head>
   <body class="bg-deep-800 font-popping">
-    <header class="">
-      <div class="container w-[95vw] ml-auto mr-auto">
+    <!-- header area -->
+    <header class="pt-3 pb-3">
+      <div class="container">
         <div class="header--inner flex justify-between items-center">
           <div class="logo--side pt-2 pb-2 h-12">
-            <a href="./index.html" class="w-48 block">
+            <a href="./index.html" class="md:w-48 w-40 block">
               <img src="./image/Dev Shalehin.png" alt="Logo" />
             </a>
           </div>
           <div class="nav--side">
-            <nav>
-              <ul class=" md:flex md:flex-row flex-col items-center gap-4 text-white">
+            <nav class="navBar">
+              <ul
+                class="md:flex md:flex-row flex-col items-center md:gap-5 gap-10 text-white"
+              >
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
               </ul>
             </nav>
           </div>
-          <span class="navitagation-btn block md:hidden text-3xl text-white"
+          <span class="navitagation-btn block md:hidden text-2xl text-white"
             ><i class="fa-solid fa-bars"></i
           ></span>
         </div>
       </div>
     </header>
+
+    <!-- hero area  -->
+    <main>
+      <div class="container">
+        <div
+          class="inner--hero--container md:flex md:flex-row flex-col justify-between items-center h-screen"
+        >
+          <div class="hero-action-side md:w-[50%] w-full">
+            <h1 class="text-white font-bold md:text-8xl text-4xl uppercase text-center md:text-left after:">
+              Full-Stuck <br />
+              <span class="inline-block text-primary">Developer</span>
+            </h1>
+            <div class="mt-7 md:text-left text-center">
+              <a href="#" class="p-2 rounded-3xl bg-primary text-white text-shadow-black">Hire me</a>
+              <a href="#" class="bg-deep-500 text-white p-2 rounded-3xl ml-3 inline-block hover:bg-primary transition-all delay-150 ease-in-out">Download CV <span class="inline-block"><i class="fa-solid fa-download"></i></span></a>
+            </div>
+          </div>
+          <div class="hero-content-side md:w-[50%] w-full p-4">
+            <div
+              class="bg-[url(./image/hero_bg.png)] bg-top bg-no-repeat bg-auto pt-50">
+              <img src="./image/hero_img.png" alt="hero img" class="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./app.js"></script>
   </body>
 </html>
