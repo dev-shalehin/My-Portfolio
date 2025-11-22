@@ -16,7 +16,10 @@
     @apply md:relative md:top-auto md:right-auto md:bg-transparent absolute top-15 -right-full transition-all 
     ease-in-out delay-150 bg-deep-500 pt-5 pb-5 pr-10 w-[50%] md:h-auto h-40 rounded-[5px] text-right;
   }
-  .container{
-    @apply  md:w-[95vw] ml-auto mr-auto w-[90vw] md:pl-0 md:pr-0 pl-3 pr-3;
+  .container {
+    @apply md:w-[95vw] ml-auto mr-auto w-[90vw] md:pl-0 md:pr-0 pl-3 pr-3;
+  }
+  .hero--title {
+    @apply text-white font-bold md:text-8xl text-4xl uppercase text-center md:text-left md:after:content-[''] md:after:bg-[url(./image/hero_arrow.png)] md:after:absolute after:left-0 after:top-5 after:w-20 after:h-full after:bg-no-repeat after:bg-center;
   }
 }
